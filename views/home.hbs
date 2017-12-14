@@ -1,12 +1,9 @@
 <link rel="stylesheet" href="/css/home.css">
-<select name="users" id="usersSelect" >
-	<option selected="selected" value="NONE">Da click aquí para identificarte</option>
-	{{#each users}}
-	<option value="{{this.name}}">{{this.name}}</option>
-	{{/each}}
-</select>
+<input type="text" id="usersSelect" placeholder="Escribe aquí tu código">
 <div class="button" onclick="elegirPapel()">
 	?
 </div>
+
+{{!-- {{> modal gifTo="Meeeee"}} --}}
 
 <script src="/js/home.js"></script>
