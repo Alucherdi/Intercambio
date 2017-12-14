@@ -23,7 +23,9 @@ app.get("/", (req, res) => {
 
 app.post("/regalo", (req, res) => {
 	var b = req.body
+	console.log("Llegando a servicio")
 	MongoClient.connect(url, (errorBD, client) => {
+		if (errorBD) console.log("ERROR: " + errorBD)
 		assert.equal(null, errorBD)
 		var db = client.db("alucherdi")
 		var collection = db.collection("papeles")
