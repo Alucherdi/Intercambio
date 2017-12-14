@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/home.css">
+<select name="users" id="usersSelect" >
+	<option selected="selected" value="NONE">Da click aquí para identificarte</option>
+	{{#each users}}
+	<option value="{{this.name}}">{{this.name}}</option>
+	{{/each}}
+</select>
+<div class="button" onclick="elegirPapel()">
+	?
+</div>
+
+<script src="/js/home.js"></script>
