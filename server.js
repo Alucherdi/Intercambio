@@ -66,4 +66,4 @@ app.post("/regalo", (req, res) => {
 	}) 
 })
 
-app.listen(4200, () => console.log("Server up in 4200"))
+app.listen(process.env.PORT || 4200, () => console.log("Server up in 4200"))
