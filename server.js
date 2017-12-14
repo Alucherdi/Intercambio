@@ -4,7 +4,7 @@ var express = require("express"),
 	model = require("./models/papeles_model"),
 	MongoClient = require("mongodb").MongoClient,
 	assert = require("assert"),
-	url = "mongodb://alucherdi:mundoweb@ds137826.mlab.com:37826"
+	url = "mongodb://alucherdi:mundoweb@ds137826.mlab.com:37826/alucherdi"
 
 app.engine("hbs", hbs({
 	extname: "hbs",
